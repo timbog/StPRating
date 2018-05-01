@@ -1,0 +1,33 @@
+group 'com.company'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 9
+
+buildscript {
+    repositories { jcenter() }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.0.RELEASE")
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    final def springVersion='5.0.4.RELEASE'
+    final def springBootVersion='2.0.0.RELEASE'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.6.2'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: springBootVersion
+    compile group: 'org.springframework', name: 'spring-webmvc', version: springVersion
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.16.8'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: springBootVersion
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter', version: springBootVersion
+
+}

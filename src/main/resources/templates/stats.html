@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/resources/lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="/resources/lib/bootstrap/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/resources/css/index.css">
+    <script src="/resources/lib/jquery/jquery.1.10.2.min.js"></script>
+    <script src="/resources/js/registry/stats.js"></script>
+    <script src="/resources/lib/bootstrap/modal.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="main">
+    <div class="row">
+        <div class="col-md-5 col-sm-5 col-lg-5">
+            <div class="row no-gutter table-reg">
+                <div class="col-md-2 col-sm-2 ">
+                    <input class="form-control" type="text" value="Координаты:" disabled>
+                </div>
+                <div class="col-md-8 col-sm-8 col-lg-8">
+                    <input type="text" class="form-control" id="coords"/>
+                </div>
+                <div class="col-md-2 col-sm-2 col-lg-2">
+                    <button type="button" id="go" class="btn btn-primary active" style="width: 100%;">Расчет</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-7 col-lg-7">
+            <div class="row">
+                <table id="children" class="table-reg">
+                    <thead>
+                        <tr>
+                            <th><input class="form-control" type="text" value="Район" style="text-align:center;" disabled></th>
+                            <th><input class="form-control" type="text" value="Муниципальный округ" style="text-align:center;" disabled></th>
+                            <th><input class="form-control" type="text" value="Время в пути" style="text-align:center;" disabled></th>
+                        </tr>
+                    <thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-sm-5 col-lg-5">
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="now" checked="checked">
+                <label class="form-check-label" for="now">Сейчас</label>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

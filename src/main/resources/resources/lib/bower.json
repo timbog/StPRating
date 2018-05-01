@@ -1,0 +1,14 @@
+{
+  "name": "StroyProjectX",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "latest",
+    "font-awesome": "latest",
+    "angular-ui-router": "latest",
+    "angular": "latest",
+    "angular-material": "latest",
+    "angular-aria": "latest",
+    "angular-animate": "latest",
+    "threejs": "latest"
+  }
+}
